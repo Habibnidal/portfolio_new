@@ -86,7 +86,7 @@ h1, h2, h3 {
   top: 0;
   z-index: 100;
   padding: 1rem 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   animation: slideDown 0.8s ease-out;
@@ -1064,7 +1064,7 @@ h1, h2, h3 {
 
   .hero {
     min-height: auto;
-    padding-top: 6rem;
+    padding-top: 8rem;
     padding-bottom: 3rem;
   }
 
@@ -1231,7 +1231,7 @@ h1, h2, h3 {
   }
 
   .hero {
-    padding-top: 5rem;
+    padding-top: 7rem;
   }
 
   .hero-name {
