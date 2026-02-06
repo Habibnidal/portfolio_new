@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Habib Nidal | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="bg-animation">
+  <div class="gradient-orb orb-1"></div>
+  <div class="gradient-orb orb-2"></div>
+  <div class="gradient-orb orb-3"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="#about" class="nav-btn">About</a></li>
+      <li><a href="#skills" class="nav-btn">Skills</a></li>
+      <li><a href="#projects" class="nav-btn">Projects</a></li>
+      <li><a href="#education" class="nav-btn">Education</a></li>
+      <li><a href="#explore" class="nav-btn">Explore</a></li>
+      <li><a href="#contact" class="nav-btn">Contact</a></li>
+      <li><a href="resume.pdf" download class="nav-btn resume-btn">Download Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="about" class="section hero">
+  <div class="container hero-grid">
+    <div class="hero-text animate-left">
+      <h1 class="hero-name">HABIB&nbsp;NIDAL</h1>
+      <p class="subtitle gradient-text">Python Fullstack Developer | Data Analyst</p>
+      <p class="description">
+        Full Stack Python Developer and Data Analyst experienced in building full-stack applications, dashboards, and data driven systems. 
+Skilled in Python, Flask, Django, SQL, Power BI, and frontend technologies. Strong understanding of CRUD operations, SDLC, data 
+modeling, UI development, and backend integration. 
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">14+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-img-wrapper animate-right">
+      <div class="profile-circle">
+        <div class="circle-border"></div>
+        <img src="profile.jpg" alt="Profile Image" class="profile-img">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="section-heading">Featured Projects</h2>
+
+  <div class="container project">
+    <div class="content-card animate-left">
+      <div class="card-icon">🍔</div>
+      <h3>FoodHub – Online Food Ordering</h3>
+      <p class="muted">(2025–2026)</p>
+      <p><strong>Tech:</strong>Django, Python, HTML, CSS, Bootstrap, SQLite, PostgreSQL, Cloudinary, Render</p>
+      <p class="description-text">
+        Developed a complete full-stack food ordering web application enabling users to browse restaurants, manage carts, and 
+place orders. Implemented role-based authentication for Customers, Vendors, and Admins with secure order processing. 
+Designed the database schema using Django ORM with SQLite (development) and PostgreSQL (production). Integrated 
+Cloudinary for cloud-based image storage and deployed the application on Render for smooth live access. 
+      </p>
+      <div class="center btn-group"><a href="https://github.com/Habibnidal/Restaurant_management_system_using_Django"
+     target="_blank"
+     rel="noopener noreferrer">
+        <button class="btn-dark">
+          <span>GitHub</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </button></a>
+        <a href="https://restaurant-management-system-using-django.onrender.com/"
+     target="_blank"
+     rel="noopener noreferrer">
+        <button class="btn-light">
+          <span>Live Demo</span>
+        </button></a>
+      </div>
+    </div>
+
+    <div class="image-blend animate-right">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop" alt="Food ordering app">
+    </div>
+  </div>
+
+  <div class="container project reverse">
+    <div class="image-blend animate-left">
+      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop" alt="Medical dashboard">
+    </div>
+
+    <div class="content-card animate-right">
+      <div class="card-icon">🏥</div>
+      <h3>Medical Analysis Dashboard</h3>
+      <p class="muted">(2024)</p>
+      <p><strong>Tech:</strong>Python, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Streamlit, Streamlit Cloud</p>
+      <p class="description-text">
+        Built an end-to-end data analysis project by sourcing and consolidating public health data from government and 
+global organizations. Analyzed trends in mortality, disease categories, health risk factors, and environmental 
+indicators using Python. Developed an interactive Streamlit dashboard with Plotly visualizations and deployed it on 
+Streamlit Cloud via GitHub
+      </p>
+
+      <div class="center btn-group"><a href="https://github.com/Habibnidal/Data_analysis_project"
+     target="_blank"
+     rel="noopener noreferrer">
+        <button class="btn-dark">
+          <span>GitHub</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </button></a>
+        <a href="https://habibnidal-medical-analysis.streamlit.app/"
+     target="_blank"
+     rel="noopener noreferrer">
+        <button class="btn-light">
+          <span>Live Demo</span>
+        </button></a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="container project">
+    <div class="content-card animate-left">
+      <div class="card-icon">📈</div>
+      <h3>HR Report</h3>
+      <p class="muted">(2025–2026)</p>
+      <p><strong>Tech:</strong> Power BI, Power Query, DAX, Excel</p>
+      <p class="description-text">
+        An interactive HR analytics dashboard representing HR metrics, performance indicators, departmental trends, and 
+workforce insights using automated DAX calculations.Cleaned and transformed raw HR data in Power Query, built KPI 
+measures using DAX, and designed an interactive dashboard layout  
+      </p>
+      <div class="center btn-group"><a href="https://github.com/Habibnidal/HR-Report"
+     target="_blank"
+     rel="noopener noreferrer">
+        <button class="btn-dark">
+          <span>GitHub</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </button></a>
+      </div>
+    </div>
+
+    <div class="image-blend animate-right">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop" alt="Food ordering app">
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 class="section-heading">Technical Expertise</h2>
+
+  <div class="container skills-grid">
+    <div class="skill-card animate-up" style="animation-delay: 0.1s">
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+      </div>
+      <h3>Backend Development</h3>
+      <p>Python, Django, FastAPI</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 90%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card animate-up" style="animation-delay: 0.2s">
+      <div class="skill-icon">
+        <img src="frontend.png" alt="JavaScript">
+      </div>
+      <h3>Frontend Development</h3>
+      <p>JavaScript, HTML5, CSS3,Figma,Canva</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 85%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card animate-up" style="animation-delay: 0.3s">
+      <div class="skill-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Database">
+      </div>
+      <h3>Databases</h3>
+      <p>PostgreSQL, Oracle SQL, SQL</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 88%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card animate-up" style="animation-delay: 0.4s">
+      <div class="skill-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+          <line x1="12" y1="22.08" x2="12" y2="12"></line>
+        </svg>
+      </div>
+      <h3>Data Analysis</h3>
+      <p>Power BI, Pandas, NumPy,Statistics,Matplotlib,
+        Seaborn,Excel,DAX,VLOOKUP,
+        XLOOKUP,Pivot Tables,Power Query,ETL,EDA,Data Modeling, KPI Development,Data cleaning</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 92%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card animate-up" style="animation-delay: 0.2s">
+      <div class="skill-icon">
+        <img src="devops.png" alt="Deployment">
+      </div>
+      <h3>Deployment</h3>
+      <p>Git, GitHub, Render, Vercel, Netlify, Cloudinary,Version Control Tools</p>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 85%"></div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <h2 class="section-heading">Education</h2>
+
+  <div class="container project">
+    <div class="content-card education-card animate-left">
+      <div class="card-icon">🎓</div>
+      <h3>B.Tech – Computer Science & Engineering</h3>
+      <p class="muted">College of Engineering Trikaripur (2021–2025)</p>
+      <p class="muted">CGPA: 6.71</p>
+      <h3>Higher Secondary</h3>
+      <p class="muted">St Michaels AIHSS Kannur (2019–2021)</p>
+      <p class="muted">percentage:90%</p>
+      <h3>SSLC</h3>
+      <p class="muted">St Michaels AIHSS Kannur (2019)</p>
+      <p class="muted">percentage:100%</p>
+      <div class="education-highlights">
+      </div>
+      
+    </div>
+
+    <div class="image-blend animate-right">
+      <img src="jaredd-craig-HH4WBGNyltc-unsplash.jpg" alt="Education">
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE -->
+<section id="explore" class="section">
+  <h2 class="section-heading">Achievements & Recognition</h2>
+
+  <!-- Certifications -->
+  <div class="container explore-grid">
+    <div class="content-card animate-left">
+      <div class="card-icon">🏆</div>
+      <h3 class="explore-title">Certifications & Training</h3>
+      <ul class="cert-list">
+        <li>
+          <div class="cert-icon">✓</div>
+          <div>
+            <strong>Pyspiders Bangalore</strong>
+            <p class="cert-detail">Python Full Stack with Data Analytics - PySpiders, Bangalore (2025–2026) </p>
+          </div>
+        </li>
+        <li>
+          <div class="cert-icon">✓</div>
+          <div>
+            <strong>Certified in Data Mining</strong>
+            <p class="cert-detail">MES Perunthalmanna Techfest  </p>
+          </div>
+        </li>
+        <li>
+          <div class="cert-icon">✓</div>
+          <div>
+            <strong>Young Innovators Program (YIP 7.0)</strong>
+            <p class="cert-detail">Young Innovators Program (YIP 7.0) -District Level Winner (Awarded for the Wearable Emergency Alert System, Final Year 
+Project)(2024-2025)</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="image-blend animate-right">
+      <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=800&h=600&fit=crop" alt="Achievements">
+    </div>
+  </div>
+
+  <!-- Project Showcases -->
+  <div class="container showcase-grid">
+    <div class="showcase-card animate-up" style="animation-delay: 0.1s">
+      <div class="showcase-header">
+        <h3 class="iframe-title">FoodHub Platform</h3>
+        <span class="showcase-badge">Live Project</span>
+      </div>
+      <div class="iframe-container">
+        <div class="iframe-placeholder">
+          <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&h=600&fit=crop" alt="FoodHub">
+          <div class="placeholder-overlay">
+            <span>View Project</span>
+          </div>
+        </div>
+      </div>
+      <div class="center"><a href="https://restaurant-management-system-using-django.onrender.com/"
+     target="_blank"
+     rel="noopener noreferrer"><button class="btn-dark">Explore Project</button></a></div>
+    </div>
+
+    <div class="showcase-card animate-up" style="animation-delay: 0.2s">
+      <div class="showcase-header">
+        <h3 class="iframe-title">Medical Analysis Dashboard</h3>
+        <span class="showcase-badge">Live Project</span>
+      </div>
+      <div class="iframe-container">
+        <div class="iframe-placeholder">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Medical Analysis">
+          <div class="placeholder-overlay">
+            <span>View Analytics</span>
+          </div>
+        </div>
+      </div>
+      <div class="center"><a href="https://habibnidal-medical-analysis.streamlit.app/"
+     target="_blank"
+     rel="noopener noreferrer"><button class="btn-dark">Explore Dashboard</button></a></div>
+    </div>
+
+    <div class="showcase-card animate-up" style="animation-delay: 0.2s">
+        <div class="showcase-header">
+          <h3 class="iframe-title">Online Dress shoping</h3>
+          <span class="showcase-badge">Live Project</span>
+        </div>
+        <div class="iframe-container">
+          <div class="iframe-placeholder">
+            <img src="dress.png" alt="Medical Analysis">
+            <div class="placeholder-overlay">
+              <span>View Project</span>
+            </div>
+          </div>
+        </div>
+        <div class="center"><a href="https://digidress.onrender.com/"
+       target="_blank"
+       rel="noopener noreferrer"><button class="btn-dark">Explore Project</button></a></div>
+    </div>
+
+    <div class="showcase-card animate-up" style="animation-delay: 0.2s">
+        <div class="showcase-header">
+          <h3 class="iframe-title">ATS Resume Generator</h3>
+          <span class="showcase-badge">Live Project</span>
+        </div>
+        <div class="iframe-container">
+          <div class="iframe-placeholder">
+            <img src="ChatGPT Image Feb 6, 2026, 05_15_12 PM.png" alt="resume">
+            <div class="placeholder-overlay">
+              <span>View Project</span>
+            </div>
+          </div>
+        </div>
+        <div class="center"><a href="https://ats-resume-generator-nyxv.onrender.com"
+       target="_blank"
+       rel="noopener noreferrer"><button class="btn-dark">Explore Project</button></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="explore" class="section">
+  <h2 class="section-heading">Other Projects</h2>
+
+  <!-- Certifications -->
+  <div class="container explore-grid">
+    <div class="content-card animate-left">
+      <div class="card-icon">🏆</div>
+      <h3 class="explore-title">projects</h3>
+      <ul class="cert-list">
+        <li>
+          <div class="cert-icon">✓</div>
+          <div>
+            <h3 class="explore-title">Data Analysis</h3>
+            <strong><ul><li>Student Analysis</li>
+            <li>Laptop Analysis</li><li>Employment Analysis</li><li>Car Prediction Analysis</li></ul></strong>
+            <p class="cert-detail">Data cleaning and visualisations done using Numpy ,Pandas, Matplotlib Seaborn</p>
+          </div>
+        </li>
+        <li>
+          <div class="cert-icon">✓</div>
+          <div>
+            <h3 class="explore-title">Power BI Reports</h3>
+            <strong><ul><li>HR Attrition</li>
+            <li>Sample Superstore Report</li></ul></strong>
+            <p class="cert-detail">data cleaning done using power query and report done using Power BI Desktop</p>
+          </div>
+        </li>
+        <li>
+          <div class="cert-icon">✓</div>
+          <div>
+            <h3 class="explore-title">Development</h3>
+            <strong><ul><li>Land Selling and Leasing website(GreenAcres)</li>
+            <li>Emotional Assistant</li><li>Wearable Emergency Alert System(WEAS)</li></ul></strong></strong>
+            <p class="cert-detail"><b>Greeen Acres</b>-Done using django Html ,css,js.<b>emotional Assistant</b>-Done using HuggingFace Model & Django.<b>WEAS</b>-intergrated project done using Raspberry pi software done using python,Flask,Flutter</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="image-blend animate-right">
+      <img src="add.png" alt="Achievements">
+    </div>
+  </div>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2 class="section-heading">Let's Connect</h2>
+
+  <div class="container contact-wrapper">
+    <div class="content-card contact-card animate-left">
+      <div class="card-icon">💬</div>
+      <h3>Get In Touch</h3>
+      <p class="description-text">
+        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+      </p>
+      
+      <div class="contact-list">
+        <a href="mailto:habibnidal2003@gmail.com" class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">habibnidal2003@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/habibnidal" target="_blank" class="contact-item">
+          <div class="contact-icon">🔗</div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/habibnidal</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/habibnidal" target="_blank" class="contact-item">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/habibnidal</span>
+          </div>
+        </a>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Kerala, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-blend contact-img animate-right">
+      <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&h=600&fit=crop" alt="Contact">
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Habib Nidal. Crafted with passion and precision.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
