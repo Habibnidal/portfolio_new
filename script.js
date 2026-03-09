@@ -4,9 +4,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      const navbar = document.querySelector('.navbar');
+      const navHeight = navbar ? navbar.offsetHeight : 0;
+      const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
+      window.scrollTo({
+        top: targetTop,
+        behavior: 'smooth'
       });
     }
   });
@@ -36,6 +39,37 @@ animatedElements.forEach(el => observer.observe(el));
 // Navbar background on scroll
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
+const navToggle = document.querySelector('.nav-toggle');
+const navList = document.querySelector('.nav-list');
+
+if (navbar && navToggle && navList) {
+  const closeMenu = () => {
+    navbar.classList.remove('menu-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  navToggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const isOpen = navbar.classList.toggle('menu-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  navList.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!navbar.contains(event.target)) {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 640) {
+      closeMenu();
+    }
+  });
+}
 
 window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
