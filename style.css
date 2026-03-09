@@ -93,6 +93,12 @@ h1, h2, h3 {
   animation: slideDown 0.8s ease-out;
 }
 
+.nav-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -113,6 +119,19 @@ h1, h2, h3 {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.navbar ul,
+.navbar li {
+  list-style-type: none;
+}
+
+.nav-list li::marker {
+  content: '';
 }
 
 .nav-btn {
@@ -157,6 +176,40 @@ h1, h2, h3 {
 
 .nav-btn:active {
   transform: translateY(-1px);
+}
+
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #2a2a2a, #111);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  border-radius: 99px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.navbar.menu-open .nav-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar.menu-open .nav-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar.menu-open .nav-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 .resume-btn {
   font-weight: 600;
@@ -1057,17 +1110,57 @@ h1, h2, h3 {
 /* Mobile Landscape (640px and below) */
 @media (max-width: 640px) {
   .navbar {
-    padding: 0.8rem 0;
+    padding: 0.7rem 0;
+  }
+
+  .nav-inner {
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
   }
 
   .nav-list {
-    gap: 0.5rem;
-    padding: 0 0.5rem;
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    left: 0.6rem;
+    right: 0.6rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.45rem;
+    padding: 0.75rem;
+    margin: 0;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 14px 32px -18px rgba(0, 0, 0, 0.9);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: max-height 0.3s ease, opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .navbar.menu-open .nav-list {
+    max-height: 80vh;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-list li {
+    width: 100%;
   }
 
   .nav-btn {
-    padding: 0.5rem 1.2rem;
-    font-size: 0.85rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
   }
 
   .hero {
