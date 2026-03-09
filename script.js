@@ -12,6 +12,39 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Mobile navigation toggle
+const navToggle = document.querySelector('.nav-toggle');
+const mobileNavbar = document.querySelector('.navbar');
+const mobileNavLinks = document.querySelectorAll('.nav-list .nav-btn');
+
+if (navToggle && mobileNavbar) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = mobileNavbar.classList.toggle('menu-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNavbar.classList.remove('menu-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!mobileNavbar.contains(event.target)) {
+      mobileNavbar.classList.remove('menu-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 640) {
+      mobileNavbar.classList.remove('menu-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
 // Intersection Observer for scroll animations
 const observerOptions = {
   threshold: 0.1,
